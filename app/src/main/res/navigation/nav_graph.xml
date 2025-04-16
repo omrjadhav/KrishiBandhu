@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/userTypeSelectionFragment">
+
+    <fragment
+        android:id="@+id/userTypeSelectionFragment"
+        android:name="com.example.basicmod.ui.auth.UserTypeSelectionFragment"
+        android:label="@string/select_user_type">
+        <action
+            android:id="@+id/action_userTypeSelectionFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_userTypeSelectionFragment_to_ownerLoginFragment"
+            app:destination="@id/ownerLoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.basicmod.ui.auth.LoginFragment"
+        android:label="@string/login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_shop"
+            app:destination="@id/navigation_shop"
+            app:popUpTo="@id/userTypeSelectionFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.basicmod.ui.auth.RegisterFragment"
+        android:label="@string/register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_navigation_shop"
+            app:destination="@id/navigation_shop"
+            app:popUpTo="@id/userTypeSelectionFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ownerLoginFragment"
+        android:name="com.example.basicmod.ui.auth.OwnerLoginFragment"
+        android:label="@string/owner_login">
+        <action
+            android:id="@+id/action_ownerLoginFragment_to_ownerRegisterFragment"
+            app:destination="@id/ownerRegisterFragment" />
+        <action
+            android:id="@+id/action_ownerLoginFragment_to_ownerDashboardFragment"
+            app:destination="@id/ownerDashboardFragment"
+            app:popUpTo="@id/userTypeSelectionFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ownerRegisterFragment"
+        android:name="com.example.basicmod.ui.auth.OwnerRegisterFragment"
+        android:label="@string/owner_register">
+        <action
+            android:id="@+id/action_ownerRegisterFragment_to_ownerLoginFragment"
+            app:destination="@id/ownerLoginFragment" />
+        <action
+            android:id="@+id/action_ownerRegisterFragment_to_ownerDashboardFragment"
+            app:destination="@id/ownerDashboardFragment"
+            app:popUpTo="@id/userTypeSelectionFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_shop"
+        android:name="com.example.basicmod.ui.shop.ShopFragment"
+        android:label="@string/shop">
+        <action
+            android:id="@+id/action_navigation_shop_to_plantDetailsFragment"
+            app:destination="@id/plantDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_social"
+        android:name="com.example.basicmod.ui.social.SocialFragment"
+        android:label="@string/social">
+        <action
+            android:id="@+id/action_socialFragment_to_createPostFragment"
+            app:destination="@id/createPostFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_predict"
+        android:name="com.example.basicmod.ui.predict.PredictFragment"
+        android:label="@string/predict" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.basicmod.ui.profile.ProfileFragment"
+        android:label="@string/profile">
+        <action
+            android:id="@+id/action_navigation_profile_to_userTypeSelectionFragment"
+            app:destination="@id/userTypeSelectionFragment"
+            app:popUpTo="@id/userTypeSelectionFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ownerDashboardFragment"
+        android:name="com.example.basicmod.ui.owner.OwnerDashboardFragment"
+        android:label="@string/owner_dashboard">
+        <action
+            android:id="@+id/action_ownerDashboardFragment_to_userTypeSelectionFragment"
+            app:destination="@id/userTypeSelectionFragment"
+            app:popUpTo="@id/userTypeSelectionFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.basicmod.ui.cart.CartFragment"
+        android:label="@string/cart" />
+
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.example.basicmod.ui.orders.OrdersFragment"
+        android:label="@string/orders" />
+
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.example.basicmod.ui.checkout.CheckoutFragment"
+        android:label="@string/checkout" />
+
+    <fragment
+        android:id="@+id/plantDetailsFragment"
+        android:name="com.example.basicmod.ui.plant.PlantDetailsFragment"
+        android:label="@string/plant_details">
+        <argument
+            android:name="plantId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="com.example.basicmod.ui.order.OrderDetailsFragment"
+        android:label="@string/order_details">
+        <argument
+            android:name="orderId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/checkStockFragment"
+        android:name="com.example.basicmod.ui.owner.CheckStockFragment"
+        android:label="@string/check_stock"
+        tools:layout="@layout/fragment_check_stock">
+        <action
+            android:id="@+id/action_checkStockFragment_to_editPlantFragment"
+            app:destination="@id/editPlantFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addStockFragment"
+        android:name="com.example.basicmod.ui.owner.AddStockFragment"
+        android:label="@string/add_stock"
+        tools:layout="@layout/fragment_add_stock" />
+
+    <fragment
+        android:id="@+id/editPlantFragment"
+        android:name="com.example.basicmod.ui.owner.EditPlantFragment"
+        android:label="@string/edit_plant"
+        tools:layout="@layout/fragment_add_stock">
+        <argument
+            android:name="plantId"
+            app:argType="string" />
+    </fragment>
+    
+    <fragment
+        android:id="@+id/revenueFragment"
+        android:name="com.example.basicmod.ui.owner.RevenueFragment"
+        android:label="@string/revenue"
+        tools:layout="@layout/fragment_revenue" />
+
+    <fragment
+        android:id="@+id/postListFragment"
+        android:name="com.example.basicmod.ui.social.PostListFragment"
+        android:label="Posts">
+        <action
+            android:id="@+id/action_postListFragment_to_createPostFragment"
+            app:destination="@id/createPostFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createPostFragment"
+        android:name="com.example.basicmod.ui.social.CreatePostFragment"
+        android:label="Create Post" />
+</navigation> 

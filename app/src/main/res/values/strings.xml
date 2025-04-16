@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BasicMod</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="welcome">Welcome!</string>
+    <string name="welcome_owner">Welcome, Owner!</string>
+    <string name="check_stock">Check Stock</string>
+    <string name="add_stock">Add Stock</string>
+    <string name="revenue">Revenue</string>
+    <string name="no_stock">No stock available</string>
+    <string name="stock_added">Stock added successfully</string>
+    <string name="stock_updated">Stock updated successfully</string>
+    <string name="stock_deleted">Stock deleted successfully</string>
+    <string name="error_adding_stock">Error adding stock</string>
+    <string name="error_updating_stock">Error updating stock</string>
+    <string name="error_deleting_stock">Error deleting stock</string>
+    <string name="confirm_delete_stock">Are you sure you want to delete this stock?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="total_revenue_value">Total Revenue: ₹%1$s</string>
+    <string name="total_orders_value">Total Orders: %1$d</string>
+    <string name="average_order_value">Average Order Value: ₹%1$s</string>
+    <string name="top_selling_plant_format">%1$s - %2$d units sold</string>
+    <string name="edit_stock">Edit</string>
+    <string name="delete_stock">Delete</string>
+    <string name="add_image">Add Image</string>
+    <string name="image_updated">Image updated successfully</string>
+    <string name="edit_plant">Edit Plant</string>
+    <string name="update_plant">Update Plant</string>
+    <string name="plant_image">Plant Image</string>
+    <string name="plant_name">Plant Name</string>
+    <string name="description">Description</string>
+    <string name="price">Price (₹)</string>
+    <string name="quantity">Quantity</string>
+    <string name="care_instructions">Care Instructions</string>
+    <string name="plant_details">Plant Details</string>
+    <string name="revenue_overview">Revenue Overview</string>
+    <string name="revenue_chart">Revenue Chart</string>
+    <string name="top_selling_plants">Top Selling Plants</string>
+    <string name="logout">Logout</string>
+    <string name="arrow_forward">Arrow Forward</string>
+    <string name="name">Name</string>
+    
+    <!-- Strings for Order Details and Invoice -->
+    <string name="order_id">Order ID</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="customer_info">Customer Information</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="order_items">Order Items</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="shipping">Shipping</string>
+    <string name="tax">Tax</string>
+    <string name="total">Total</string>
+    <string name="update_status">Update Status</string>
+    <string name="print_invoice">Print Invoice</string>
+    <string name="print_invoice_description">Print or save invoice as PDF</string>
+    <string name="app_logo">App Logo</string>
+    <string name="invoice_number">Invoice Number</string>
+    <string name="bill_to">Bill To</string>
+    <string name="order_date">Order Date</string>
+    <string name="payment_method">Payment Method</string>
+    
+    <!-- Add other potentially missing common strings -->
+    <string name="invalid_email">Invalid Email Address</string>
+    <string name="invalid_password">Password must be at least 6 characters</string>
+    <string name="passwords_dont_match">Passwords do not match</string>
+    <string name="select_user_type">Select User Type</string>
+    <string name="owner_login">Owner Login</string>
+    <string name="owner_register">Owner Register</string>
+    <string name="nursery_name">Nursery Name</string>
+    <string name="owner_name">Owner Name</string>
+    <string name="owner_dashboard">Owner Dashboard</string>
+    <string name="shop">Shop</string>
+    <string name="social">Social</string>
+    <string name="predict">Predict</string>
+    <string name="profile">Profile</string>
+    <string name="cart">Cart</string>
+    <string name="orders">Orders</string>
+    <string name="checkout">Checkout</string>
+    <string name="order_details">Order Details</string>
+
+    <!-- Strings from latest build error -->
+    <string name="thank_you_message">Thank you for your message!</string>
+    <string name="print">Print</string>
+    <string name="save_as_pdf">Save as PDF</string>
+    <string name="share">Share</string>
+    <string name="cancel">Cancel</string>
+    <string name="proceed">Proceed</string>
+    <string name="update_order_status">Update Order Status</string>
+    <string name="current_status">Current Status</string>
+    <string name="new_status">New Status</string>
+    <string name="pending">Pending</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="shipped">Shipped</string>
+    <string name="delivered">Delivered</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="status_note">Status Note</string>
+    <string name="update">Update</string>
+    <string name="empty_cart">Empty Cart</string>
+    <string name="empty_cart_message">Your cart is empty.</string>
+    <string name="continue_shopping">Continue Shopping</string>
+
+    <!-- Strings from yet another build error -->
+    <string name="proceed_to_checkout">Proceed to Checkout</string>
+    <string name="change_address">Change Address</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="debit_card">Debit Card</string>
+    <string name="upi">UPI</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="place_order">Place Order</string>
+    <string name="all_orders">All Orders</string>
+    <string name="search_orders">Search Orders</string>
+    <string name="filter">Filter</string>
+    <string name="no_orders">No Orders</string>
+    <string name="no_orders_description">No orders found.</string>
+    <string name="search">Search</string>
+    <string name="all">All</string>
+    <string name="indoor_plants">Indoor Plants</string>
+    <string name="outdoor_plants">Outdoor Plants</string>
+    <string name="succulents">Succulents</string>
+    <string name="flowers">Flowers</string>
+
+    <!-- Final batch of missing strings -->
+    <string name="add_plant">Add Plant</string>
+    <string name="register_as_owner">Register as Owner</string>
+    <string name="predict_crop">Predict Crop</string>
+    <string name="soil_type">Soil Type</string>
+    <string name="climate">Climate</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="rainfall">Rainfall</string>
+    <string name="soil_ph">Soil pH</string>
+    <string name="prediction_result">Prediction Result</string>
+    <string name="username">Username</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="available_plants">Available Plants</string>
+    <string name="whats_on_mind">What\'s on your mind?</string>
+    <string name="create_post">Create Post</string>
+    <string name="buyer">Buyer</string>
+    <string name="owner">Owner</string>
+    <string name="remove">Remove</string>
+    <string name="category_icon">Category Icon</string>
+    <string name="view_details">View Details</string>
+
+    <!-- Last batch from build errors -->
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="favorite">Favorite</string>
+    <string name="user_profile_picture">User Profile Picture</string>
+    <string name="follow">Follow</string>
+    <string name="post_image">Post Image</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+
+    <!-- New strings for the shop section -->
+    <string name="search_plants">Search plants…</string>
+    <string name="no_plants_available">No plants available</string>
+
+</resources>

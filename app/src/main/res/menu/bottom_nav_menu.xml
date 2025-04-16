@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_shop"
+        android:icon="@drawable/ic_shop"
+        android:title="@string/shop" />
+
+    <item
+        android:id="@+id/navigation_social"
+        android:icon="@drawable/ic_social"
+        android:title="@string/social" />
+
+    <item
+        android:id="@+id/navigation_predict"
+        android:icon="@drawable/ic_predict"
+        android:title="@string/predict" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile" />
+</menu> 
