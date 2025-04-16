@@ -1,0 +1,55 @@
+Initial login/signup:
+Buyer,Nursery owner
+
+//
+owner signup:
+Name_
+contact_
+nurseryname_
+etc.
+owner login:
+nurseryname_
+pwd_
+owner listing:
+planttype_
+plantname_
+plantimage_
+plantdescription_
+available_qunty_
+owner stock:
+plantpic_
+plantdetails_
+availablequnty_
+
+//
+buyer{farmer}
+buyer signup:
+name_
+contact_
+email_
+address_
+pwd_
+buyer login:
+contact_
+pwd_
+buyer profile:
+details
+mycart
+buyer home:
+Plants_
+Fertilizers_{optional}
+CropPrediction_
+FarmerGram_
+Plants:
+Plant details along with the prize
+addtocart_
+CropPreditction:
+Properties_
+predict_
+output_
+FarmerGram:
+others posts
+
+
+
+
